@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=JiHeon&fontSize=50&color=ABDEE6&section=header)
+![header](https://capsule-render.vercel.app/api?type=waving&text=Kim Ji Heon&fontSize=50&color=ABDEE6&section=header)
 
 ## About Me
 

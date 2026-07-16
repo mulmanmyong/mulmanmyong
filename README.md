@@ -1,26 +1,23 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=KimJiHeon&fontSize=50&color=ABDEE6&section=header)
+## Introduction
 
-## About Me
+안녕하세요. 사용자가 불편함을 느끼기 전에 **흐름을 먼저 설계하는 엔지니어** 김지헌입니다.
 
-전자공학 기반으로 Physical System의 상태와 데이터를 이해하고,  
-이를 Backend API, 데이터 구조, 사용자 화면, 배포 환경까지 연결해온 김지헌입니다.
+전자공학 기반으로 Physical System의 상태와 데이터를 이해하고, 이를 Backend API, 화면, 배포 환경까지 연결해왔습니다.
+기능 구현을 넘어, 데이터와 서비스가 사용자 경험까지 끊기지 않도록 설계합니다.
 
-기능 구현에 그치지 않고,  
-데이터가 수집되고 구조화되어 서비스 안에서 안정적으로 동작하는 흐름을 설계하는 데 집중합니다.
-
-### Core Experience
+### What can I do?
 
 - **Backend API & Auth/Session**  
-  Java/Spring Boot 기반 REST API, JPA 도메인 로직, JWT·Redis 인증/세션 흐름을 설계했습니다.
+  Java/Spring Boot 기반 REST API, JPA 도메인 로직, JWT·Redis 인증/세션 흐름을 설계
 
 - **Data / DB Engineering**  
-  ERD 기반 관계형 데이터 구조를 설계하고, PostgreSQL/PostGIS, DuckDB/Parquet, H3 기반 데이터를 다뤘습니다.
+  ERD 기반 관계형 데이터 구조를 설계하고, PostgreSQL/PostGIS, DuckDB/Parquet, H3 기반 데이터 사용
 
 - **Infra & Deployment**  
-  Docker, Jenkins, Nginx를 활용해 dev·qa·prod 환경을 분리하고 재현 가능한 배포 흐름을 구성했습니다.
+  Docker, Jenkins, Nginx를 활용해 dev·qa·prod 환경을 분리하고 재현 가능한 배포 흐름 구성
 
 - **Edge & AIoT Integration**  
-  Jetson Orin, Raspberry Pi, MQTT, GStreamer, RTSP를 활용해 Physical System과 서비스 흐름을 연결했습니다.
+  Jetson Orin, Raspberry Pi, MQTT, GStreamer, RTSP를 활용해 Physical System과 서비스 흐름 연결
 
 
 ## Projects
@@ -94,10 +91,3 @@ AI 결과를 실제 로봇 동작과 영상 송출 흐름으로 연결한 발표
   <img src="https://github-readme-stats.vercel.app/api?username=mulmanmyong&show_icons=true" height="123"/>
   -->
 </div>
-
-## Contact
-
-- GitHub: github.com/mulmanmyong
-- Email: mulmanmyong@gmail.com
-
-![footer](https://capsule-render.vercel.app/api?type=waving&text=&fontSize=50&color=ABDEE6&section=footer)

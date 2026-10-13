@@ -4,7 +4,7 @@
 Java와 Spring Boot 기반의 백엔드 개발을 중심으로 인증, 데이터 조회, 배포 환경을 구현했습니다.  
 최근에는 삼성전자 기업연계 프로젝트에서 데이터 구조 분석부터 API와 지도 화면 개발까지 맡았습니다.
 
-[Portfolio](https://canva.link/kz6tfj9fw8ruvin) <!--| [Blog](BLOG_URL)-->
+<!--[Portfolio](https://canva.link/kz6tfj9fw8ruvin) | [Blog](BLOG_URL)-->
 
 ### Projects
 

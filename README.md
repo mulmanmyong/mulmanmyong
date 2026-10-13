@@ -1,103 +1,95 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=JiHeon&fontSize=50&color=ABDEE6&section=header)
+# 김지헌 (Kim Ji Heon) | Software Engineer
 
-## About Me
+전자공학을 전공하고, 임베디드 시스템에서 웹 서비스로 개발 경험을 넓혀왔습니다.  
+Java와 Spring Boot 기반의 백엔드 개발을 중심으로 인증, 데이터 조회, 배포 환경을 구현했습니다.  
+최근에는 삼성전자 기업연계 프로젝트에서 데이터 구조 분석부터 API와 지도 화면 개발까지 맡았습니다.
 
-전자공학 기반으로 Physical System의 상태와 데이터를 이해하고,  
-이를 Backend API, 데이터 구조, 사용자 화면, 배포 환경까지 연결해온 김지헌입니다.
-
-기능 구현에 그치지 않고,  
-데이터가 수집되고 구조화되어 서비스 안에서 안정적으로 동작하는 흐름을 설계하는 데 집중합니다.
-
-### Core Experience
-
-- **Backend API & Auth/Session**  
-  Java/Spring Boot 기반 REST API, JPA 도메인 로직, JWT·Redis 인증/세션 흐름을 설계했습니다.
-
-- **Data / DB Engineering**  
-  ERD 기반 관계형 데이터 구조를 설계하고, PostgreSQL/PostGIS, DuckDB/Parquet, H3 기반 데이터를 다뤘습니다.
-
-- **Infra & Deployment**  
-  Docker, Jenkins, Nginx를 활용해 dev·qa·prod 환경을 분리하고 재현 가능한 배포 흐름을 구성했습니다.
-
-- **Edge & AIoT Integration**  
-  Jetson Orin, Raspberry Pi, MQTT, GStreamer, RTSP를 활용해 Physical System과 서비스 흐름을 연결했습니다.
-
+[Portfolio](https://canva.link/kz6tfj9fw8ruvin) <!--| [Blog](BLOG_URL)-->
 
 ## Projects
 
-| Project | Description | My Focus | Tech |
-| --- | --- | --- | --- |
-| **Presento** | AI 발표 보조 Q&A 로봇 | AI 결과를 로봇 제어와 영상 송출 흐름으로 연결 | Jetson Orin, Raspberry Pi, MQTT, GStreamer, RTSP, mediaMTX, Docker |
-| **Finkids** | 체험형 학급 경제 교육 플랫폼 | 학급 경제 도메인 ERD, 인증/세션, 배포 흐름 설계 | Spring Boot, MySQL, Redis, React, Docker, Jenkins, Nginx |
-| **NAIS** | AI 기반 네트워크 품질관리 시스템 | 대용량 KPI 데이터를 지도 분석 화면과 리포트로 연결 | React, TypeScript, FastAPI, PostgreSQL/PostGIS, DuckDB, Parquet, H3 |
+### NAIS | Network AI Insight System
+2026.04.06 – 2026.05.21 (약 7주) / 삼성전자 기업연계 프로젝트
 
-### Presento
+통신 품질 데이터와 AI 예측 결과를 지도에서 조회하고 비교하는 분석 시스템
 
-AI 결과를 실제 로봇 동작과 영상 송출 흐름으로 연결한 발표 보조 Q&A 로봇입니다.
+**역할: 데이터 구조 분석 / 조회 API 및 지도 화면 개발**
 
-- Fusion 360 기반 하우징 설계 및 3D 프린팅 구조 제작
-- Jetson Orin - Raspberry Pi 간 TCP 제어 통신 구성
-- MQTT 기반 로봇 상태 흐름 설계
-- GStreamer, RTSP, mediaMTX 기반 영상 송출 구조 구성
-- 🏆 SSAFY AIoT 프로젝트 우수상
+- 주행 경로 주변의 통신 품질과 예측 결과를 확인하는 기능을 맡아 데이터 구조 분석부터 API, 지도 화면까지 개발
+- 데이터별 구조와 조회 목적을 검토하고, 필요한 정보를 함께 조회할 수 있도록 저장 및 처리 방식 구성
+- Python 기반 조회 API와 지도 화면을 연결해 실제 측정 데이터와 AI 예측 결과를 비교하는 기능 구현
+- 조회 범위와 화면에 표시하는 데이터의 처리 방식을 조정해 API 응답 및 지도 렌더링 성능 개선
 
-### Finkids
+기업연계 프로젝트로 코드와 상세 자료 비공개
 
-초등학교 교실을 작은 경제 사회로 구성한 체험형 학급 경제 교육 플랫폼입니다.
+### Finkids | 학급 금융 경제 교육 플랫폼
+2026.02.19 – 2026.03.30 (약 6주) / SSAFY 특화 프로젝트 우수상
 
-- 학생, 계좌, 직업, 거래 이력 중심의 학급 경제 ERD 설계
-- 교사/학생 JWT 권한 분리 및 Redis 기반 세션 검증·복구
-- Docker, Jenkins, Nginx 기반 dev·qa·prod 배포 흐름 구성
-- Team Leader로 도메인 구조와 운영 흐름 정리
-- 🏆 SSAFY 금융 프로젝트 우수상
+교실에서 직업 활동과 금융 거래를 경험하며 경제를 배우는 교육 서비스
 
-### NAIS
+**역할: 팀장 / 인증 및 학생관리 기능 개발 / 배포 환경 구성**
 
-대용량 네트워크 KPI 데이터를 지도 기반 분석 화면으로 연결한 품질 관리 대시보드입니다.
+- 교사와 학생의 접근 권한을 구분하는 JWT 인증 구현. Refresh Token을 HttpOnly 쿠키와 Redis로 관리하고 로그인 상태 복구 기능 개발
+- 학생 생성, 수정, 비활성화, 비밀번호 초기화를 위한 API와 React 관리 화면 개발
+- Jenkins 멀티브랜치 파이프라인으로 MR 검증과 브랜치별 배포 구성. 개발·QA·운영 환경의 설정을 분리하고 개발 및 운영 DB 및 계정 분리
+- 기능의 필요성과 일정을 검토해 팀의 구현 범위 조율. 팀원들과 세 차례 QA를 진행하며 회차별 발견 오류 약 20건 → 10건 → 3건으로 감소
 
-- PostgreSQL/PostGIS 기반 공간 데이터 관리
-- DuckDB/Parquet 기반 대용량 KPI 조회
-- H3 Index 기반 KPI Heatmap 구현
-- FastAPI 분석 API와 React 지도 대시보드 연결
-- 지도 렌더링 성능 최적화 경험
+### Presento | AI 기반 발표 질의응답 보조 로봇
+2026.01.06 – 2026.02.09 (5주) / SSAFY 공통 프로젝트 우수상
 
+발표 현장에서 질문자를 찾고, 질문을 들은 뒤 AI의 답변을 음성으로 전달하는 서비스
 
-## Education & Training
+**역할: 임베디드 개발 / 로봇 시스템 통합**
 
-| Type | Name | Period |
+- 웹과 AI 담당자들이 주고받는 정보를 확인하고, MQTT 제어 명령과 상태 메시지를 로봇 코드에 반영
+- Jetson과 Raspberry Pi 간 TCP 통신 및 모터 제어 구현. 질문자 탐색부터 질문 청취와 답변 출력까지 동작 순서 관리
+- 로봇 회전 후 질문자 위치를 다시 탐지하는 보정 과정을 적용해 회전 오차에 대응
+- MediaMTX와 GStreamer를 활용해 로봇 카메라 영상을 웹에서 확인할 수 있도록 스트리밍 연결
+
+## Skills
+
+### 주요 사용 기술
+
+| 분야 | 기술 |
+| --- | --- |
+| Backend | Java, Spring Boot |
+| Database | MySQL, Redis |
+| Infra | Linux, Docker, Jenkins, Nginx |
+
+### 프로젝트 활용 경험
+
+| 분야 | 기술 |
+| --- | --- |
+| Data & API | Python, FastAPI, PostgreSQL, PostGIS, DuckDB |
+| Frontend | JavaScript, TypeScript, React, Vue |
+| Embedded & Robotics | C, C++, ROS, ROS2, MQTT |
+| Streaming | MediaMTX, GStreamer |
+
+## Education
+
+| 기간 | 교육 |
+| --- | --- |
+| 2025.07.08 – 2026.06.30 | 삼성 청년 SW·AI 아카데미 14기 Java 트랙 수료 |
+| 2019.03.04 – 2025.08.22 | 경북대학교 전자공학부 전공 / 컴퓨터학부 부전공 |
+
+## Awards
+
+| 수상일 | 수상 |
+| --- | --- |
+| 2026.03.30 | SSAFY 특화 프로젝트 우수상 — Finkids |
+| 2026.02.09 | SSAFY 공통 프로젝트 우수상 — Presento |
+| 2024.10.29 | HL FMA 자율주행 경진대회 장려상 |
+
+## Certifications & Language
+
+| 자격명 | 취득일 / 응시일 | 발급기관 |
 | --- | --- | --- |
-| **Education** | 경북대학교 IT대학 전자공학부 전공 / 컴퓨터학부 부전공 | 2019.03 - 2025.08 |
-| **Training** | 삼성청년SW·AI아카데미 14기 Java 전공 트랙 | 2025.07 - 2026.06 |
+| SQL 개발자(SQLD) | 2026.09.11 | 한국데이터산업진흥원 |
+| 정보처리기사 | 2025.09.12 | 한국산업인력공단 |
+| OPIc IM2 | 2025.02.21 | ACTFL |
 
+<!--
+## Learning
 
-## Awards & Certifications
-
-### Awards
-
-- **SSAFY 금융 프로젝트 우수상** — Finkids, 2026.03.30
-- **SSAFY AIoT 프로젝트 우수상** — Presento, 2026.02.09
-- **HL FMA 자율주행 경진대회 장려상** — 모라이 시뮬레이션, 2024.10.29
-
-### Certifications
-
-- **정보처리기사** — 2025.09.12
-- **OPIc IM2** — 2025.02.21
-
-## Status
-<div align="left">
-  <!-- Solved.ac Badge -->
-  <a href="https://solved.ac/mulmanmyong/"><img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mulmanmyong" height="123"/></a>
-  <!-- Top Langs 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mulmanmyong" height="123"/>
-  -->
-  <!-- GitHub Stats 
-  <img src="https://github-readme-stats.vercel.app/api?username=mulmanmyong&show_icons=true" height="123"/>
-  -->
-</div>
-
-## Contact
-
-- GitHub: github.com/mulmanmyong
-- Email: mulmanmyong@gmail.com
-
-![footer](https://capsule-render.vercel.app/api?type=waving&text=&fontSize=50&color=ABDEE6&section=footer)
+[CS Study](https://github.com/mulmanmyong/Computer-Science-Study) | [Algorithm](https://github.com/mulmanmyong/algo)
+-->
